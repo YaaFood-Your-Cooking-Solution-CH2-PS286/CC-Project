@@ -1,0 +1,12 @@
+GET http://localhost:5000/getUser
+Authorization: Bearer
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImVtYWlsIjoicmFjaG1hdGZhcmlkMTRAZ21haWwuY29tIiwiaWF0IjoxNzAxODAxODY1LCJleHAiOjE3MDE4MDkwNjV9.1qD6oZFSeGInXgsKRy42rJ5myGOuKaG94uW0yAGJAnU
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"rachmatfarid14@gmail.com",
+    "password":"test123"
+}
