@@ -1,6 +1,1 @@
-Flask
-gunicorn
-tensorflow
-numpy
-python-time
-Pillow
+
