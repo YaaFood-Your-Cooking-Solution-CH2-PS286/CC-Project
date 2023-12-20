@@ -15,6 +15,9 @@ const Users = db.define('users',{
     refresh_token:{
         type:DataTypes.TEXT
     },
+    imageUrl:{
+        type:DataTypes.STRING
+    },
 },{
     freezeTableName:true
 });
@@ -28,17 +31,17 @@ const articles = db.define('articles',{
         type:DataTypes.STRING
     },
     description:{
-        type:DataTypes.STRING
+        type:DataTypes.TEXT
     },
-    createdBy:{
-        type:DataTypes.STRING
+    ingredients:{
+        type:DataTypes.TEXT
+    },
+    steps:{
+        type:DataTypes.TEXT
     },
     createdAt:{
     type: DataTypes.DATE,
     // defaultValue: Sequelize.NOW, // Nilai default adalah waktu saat ini
-    },
-    contentArtikel:{
-        type:DataTypes.TEXT
     },
     userId:{
         type:DataTypes.INTEGER
@@ -46,6 +49,9 @@ const articles = db.define('articles',{
 },{
     freezeTableName:true
 });
+articles.belongsTo(Users, { foreignKey: 'userId' })
+
+
 
 const comment = db.define('comment',{
     commentUserId:{
@@ -67,6 +73,40 @@ const comment = db.define('comment',{
 });
 
 
+
+const resep = db.define('resep',{
+    title:{
+        type:DataTypes.STRING
+    },
+    ingredients:{
+        type:DataTypes.TEXT
+    },
+    steps:{
+        type:DataTypes.TEXT
+    },
+    url:{
+        type: DataTypes.STRING,
+        // defaultValue: Sequelize.NOW, // Nilai default adalah waktu saat ini
+        },
+
+},{
+    freezeTableName:true
+});
+
+// querybahan
+const querybahan = db.define('querybahan',{
+    bahan:{
+        type:DataTypes.INTEGER
+    },
+    imageUrl:{
+        type:DataTypes.INTEGER
+    }
+
+},{
+    freezeTableName:true
+});
+
+
 // Assuming a one-to-many relationship between Users and articles
 Users.hasMany(comment, { foreignKey: 'commentUserId' });
 comment.belongsTo(Users, { foreignKey: 'commentUserId' });
@@ -75,4 +115,9 @@ comment.belongsTo(Users, { foreignKey: 'commentUserId' });
 Users.hasMany(comment, { foreignKey: 'commentUserId' });
 comment.belongsTo(Users, { foreignKey: 'commentUserId' });
 
-module.exports = {Users, articles, comment};
+module.exports = {Users, articles, comment, resep, querybahan};
+
+
+// Define the association
+Users.hasMany(articles, { foreignKey: 'userId' });
+articles.belongsTo(Users, { foreignKey: 'userId' });
