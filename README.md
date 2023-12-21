@@ -7,10 +7,9 @@
 - Run "npm run start" to run the app
 
 ## API Endpoints
-The comprehensive API documentation for the recipe recommendation feature, posting articles, comments, logging in, registering, logging out, and editing profiles has been recorded using the Postman Documenter. This documentation offers in-depth details about every endpoint, covering functionalities, request parameters, response structures, as well as examples of requests and responses.
+The comprehensive API documentation for the recipe recommendation feature, posting articles, comments, loggin, register, loggout, and editing profiles has been recorded using the Postman Documenter. This documentation offers in-depth details about every endpoint, covering functionalities, request parameters, response structures, as well as examples of requests and responses.
 
 To access the API documentation, visit [[Yaafood API Documentation](https://documenter.getpostman.com/view/31550908/2s9Ykq8Lu9)].
-
 
 ML MODEL : https://drive.google.com/file/d/1GP-qSMlr0uVRcfAPc5Qj0g7cwAwsha26/view?usp=sharing
 
