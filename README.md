@@ -4,14 +4,14 @@
 ML MODEL : https://drive.google.com/file/d/1GP-qSMlr0uVRcfAPc5Qj0g7cwAwsha26/view?usp=sharing
 
 # Make RESTfull API with Flask and Cloud Run
-1. Prepare prediction model in "<b>h.5</b>" format, file are stored in "ML-Backend" folder 
-2. Write <b>main.py</b> base on machine learning testing model, files are saved in the "ML-Backend" folder
-3. Create file named "<b>requirement.txt</b>" for library you need for running our code
-4. Create file named "<b>Dockerfile</b>" for run system in our container
-5. Create file named "<b>.dockerignore</b>" for ignore system to ignore spesific file.
-6. Create folder static/uploads to save photos for prediction progress.
-7. Create new Project in <b>Google Cloud Platform</b>
-8. Active <b>Cloud Run API</b> and <b>Cloud Build API</b>
-9. Install and init Google Cloud SDK (Use this link : <b>https://cloud.google.com/sdk/docs/install</b>)
-10. Use Cloud Build to import our code to our cloud services (<b> gcloud builds submit --tag gcr.io/<project_id>/<function_name></b>)
-11. Use Cloud Run to deploy our API (<b> gcloud run deploy --image gcr.io/<project_id>/<function_name> --platform managed </b>)
+1. Set up a predictive model in "h.5" format, with files stored in the "ML-Backend" directory.
+2. Develop the main.py script based on the machine learning testing model; save files in the "ML-Backend" folder.
+3. Generate a "requirements.txt" file listing the necessary libraries for running the code.
+4. Create a "Dockerfile" for running the system within our container.
+5. Establish a ".dockerignore" file to instruct the system to ignore specific files.
+6. Establish a "static/uploads" folder to store photos for the prediction process.
+6. Initiate a new project on the Google Cloud Platform.
+7. Activate both the Cloud Run API and Cloud Build API.
+8. Install and initialize the Google Cloud SDK using this link: https://cloud.google.com/sdk/docs/install.
+9. Utilize Cloud Build to import our code into our cloud services (execute: gcloud builds submit --tag gcr.io/<project_id>/<function_name>).
+10. Deploy our API using Cloud Run (execute: gcloud run deploy --image gcr.io/<project_id>/<function_name> --platform managed).
