@@ -1,4 +1,10 @@
-# CC-Project
+# YaaFood Cloud Computing
+
+### How to run
+- Duplicate the code by cloning the repository or downloading it as a zip file.
+- Establish a connection to your database and execute the migration file.
+- Execute "npm install" to install the necessary dependencies.
+- Run "npm run start" to run the app
 
 ## API Endpoints
 The comprehensive API documentation for the recipe recommendation feature, posting articles, comments, logging in, registering, logging out, and editing profiles has been recorded using the Postman Documenter. This documentation offers in-depth details about every endpoint, covering functionalities, request parameters, response structures, as well as examples of requests and responses.
