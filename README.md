@@ -1,5 +1,10 @@
 # CC-Project
 
+## API Endpoints
+The comprehensive API documentation for the recipe recommendation feature, posting articles, comments, logging in, registering, logging out, and editing profiles has been recorded using the Postman Documenter. This documentation offers in-depth details about every endpoint, covering functionalities, request parameters, response structures, as well as examples of requests and responses.
+
+To access the API documentation, visit [Yaafood API Documentation](https://yaafood.et.r.appspot.com/).
+
 
 ML MODEL : https://drive.google.com/file/d/1GP-qSMlr0uVRcfAPc5Qj0g7cwAwsha26/view?usp=sharing
 
